@@ -60,11 +60,13 @@ no_button.addEventListener('click', () => {
 yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "./public/images/kiss.gif";
+    banner.src = "./public/images/happy.gif";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
     buttons.style.display = "none";
+    let msg2= document.getElementById('msg');
+    msg2.style.display ="none";
     // show message div
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
